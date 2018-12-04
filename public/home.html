@@ -49,8 +49,14 @@
 				<img class="img" src="song.png"/>
 				<h2> sleep.mp3 </h2>
 				
-				<a href="http://localhost:3000/music?id=sleep.mp3" target="_blank"> <button class="btn btn-success"> Play </button>	</a> <hr>
-				<a href="http://localhost:3000/download?id=hello.mp3"  target="_blank"> <button class="btn btn-success"> Download </button> </a>
+<!-- 				<a href="http://localhost:3000/music?id=hello.mp3" target="_blank"> <button class="btn btn-success"> Play </button>	</a> <hr>
+				<a href="http://localhost:3000/download?id=hello.mp3"  target="_blank"> <button class="btn btn-success"> Download </button> </a> -->
+				<div style="display: flex;justify-content: center;">
+					<audio controls style="margin-right: 2vw">
+						<source src="http://localhost:3000/music?id=hello.mp3" type="audio/mp3">
+					</audio>
+					<a style="align-self: center;" href="http://localhost:3000/download?id=hello.mp3"  target="_blank"> <button class="btn btn-success"> Download </button> </a>
+				</div>
 			</div>
 		</div>
 	</div>

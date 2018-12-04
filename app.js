@@ -20,7 +20,13 @@ app.get('/music', function(req,res){
 		if(exists)
 		{
 			var rstream = fs.createReadStream(file);
+			res.send(rstream);
 			rstream.pipe(res);
+			// fs.readFile(file, (err, data) => {
+   //  			if (err) throw err;
+  
+   //  			res.end(data);
+  	// 		});
 		}
 		else
 		{
